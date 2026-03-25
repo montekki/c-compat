@@ -2,6 +2,9 @@
 
 use core::ffi::c_int;
 
+// Re-export straight from dependency
+pub use tinyrlibc::qsort;
+
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn abs(n: c_int) -> c_int {
     n.abs()
