@@ -1,16 +1,17 @@
 [package]
 name = "c-compat"
-version = "0.0.1"
+version = "0.1.0-alpha.1"
 edition = "2024"
 authors = ["Alessandro Gasbarroni <alex.gasbarroni@gmail.com>"]
 description = "Allows to easily compile and integrate C libraries in Rust in a cross-platform way"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Lakier15/c-compat"
 readme = "README.md"
+categories = ["no-std", "development-tools::build-utils", "development-tools::ffi"]
 links = "c_compat"
 
 [dependencies]
-libm = "0.2.15"
+libm = "0.2.16"
 # TODO: Allow feature selection from this crate, plus gate with auto-envs based on feature flags
 tinyrlibc = { version = "0.5.1", default-features = false, features = ["atoi", "qsort", "strcat", "strcpy"] }
 
