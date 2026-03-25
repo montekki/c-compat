@@ -37,10 +37,17 @@
 //!         ...
 //! ```
 //!
+//! Then in your *-sys crate you can import the symbols so that they are visible by the linker
+//!
+//! ```no_run
+//! // Make sure we automatically make the necessary symbols available
+//! use c_compat as _;
+//! ```
+//!
 //! and that's it! As long as all the `c-compat` includes cover the needs of your *-sys crate, you
 //! should be in a position where you are leveraging the power of `clang` to cross-compile a C
 //! library with Rust without needing any extra sysroots, compilers, etc...
 #![no_std]
 
-mod math;
-mod stdlib;
+pub mod math;
+pub mod stdlib;
