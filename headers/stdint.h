@@ -17,7 +17,7 @@ typedef __UINT64_TYPE__ uint64_t;
 #define INT8_MAX		__INT8_MAX__
 #define INT16_MAX		__INT16_MAX__
 #define INT32_MAX		__INT32_MAX__
-#define INT64_MAX		__IN64_MAX__
+#define INT64_MAX		__INT64_MAX__
 
 /* Maximum of unsigned integral types. */
 #define UINT8_MAX		__UINT8_MAX__
