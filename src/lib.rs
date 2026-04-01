@@ -49,5 +49,7 @@
 //! library with Rust without needing any extra sysroots, compilers, etc...
 #![no_std]
 
+pub mod ctype;
 pub mod math;
 pub mod stdlib;
+pub mod string;

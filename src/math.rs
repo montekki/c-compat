@@ -34,6 +34,16 @@ pub extern "C" fn fmaxf(x: c_float, y: c_float) -> c_float {
 }
 
 #[unsafe(no_mangle)]
+pub extern "C" fn sqrt(x: c_double) -> c_double {
+    libm::sqrt(x)
+}
+
+#[unsafe(no_mangle)]
+pub extern "C" fn sqrtf(x: c_float) -> c_float {
+    libm::sqrtf(x)
+}
+
+#[unsafe(no_mangle)]
 pub extern "C" fn ceil(x: c_double) -> c_double {
     libm::ceil(x)
 }

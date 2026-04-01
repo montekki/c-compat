@@ -4,6 +4,9 @@
 /* Tinyrlibc implement these. */
 char *strcat(char *destination, const char *source);
 char *strcpy(char *destination, const char *source);
+#define strchr(s, c) __builtin_strchr(s, c)
+#define strstr(haystack, needle) __builtin_strstr(haystack, needle)
+#define memchr(s, c, n) __builtin_memchr(s, c, n)
 
 /* Clang builtins. */
 #define strlen(str) __builtin_strlen(str)

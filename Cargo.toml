@@ -13,7 +13,12 @@ links = "c_compat"
 [dependencies]
 libm = "0.2.16"
 # TODO: Allow feature selection from this crate, plus gate with auto-envs based on feature flags
-tinyrlibc = { version = "0.5.1", default-features = false, features = ["atoi", "qsort", "strcat", "strcpy"] }
+tinyrlibc = { version = "0.5.1", default-features = false, features = [
+    "atoi", "qsort", "strcat", "strcpy",
+    "memchr", "strcspn", "strspn", "strncasecmp",
+    "strtol", "strtoul",
+    "isalpha", "isdigit", "isspace", "isupper",
+] }
 
 [build-dependencies]
 walkdir = "2.5.0"
