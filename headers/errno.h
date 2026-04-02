@@ -1,10 +1,5 @@
-/*
- * Copyright (C) 2025 The WAMR Project Developers. All rights reserved.
- * SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
- *
- * Minimal errno.h for bare-metal esp-hal builds (no sysroot).
- * errno is a plain global provided by esp_hal_platform.c.
- */
+/* Minimal errno.h for bare-metal esp-hal builds (no sysroot).
+ * errno is a plain global provided by esp_hal_platform.c. */
 
 #ifndef _ERRNO_H
 #define _ERRNO_H
