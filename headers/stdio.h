@@ -1,6 +1,10 @@
 #ifndef _STDIO_H
 #define _STDIO_H
 
-// Dummy to fix #include <stdio.h> compilation errors
+#include <stddef.h>
+#include <stdarg.h>
+
+int vsnprintf(char *buf, size_t size, const char *fmt, va_list args);
+int snprintf(char *buf, size_t size, const char *fmt, ...);
 
 #endif
